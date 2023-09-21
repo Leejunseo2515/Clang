@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+enum Days {
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
+};
+
+int main() {
+    enum Days today = WEDNESDAY;
+
+    switch (today) {
+        case MONDAY:
+            printf("월요일\n");
+            break;
+        case TUESDAY:
+            printf("화요일\n");
+            break;
+        case WEDNESDAY:
+            printf("수요일\n");
+            break;
+        case THURSDAY:
+            printf("목요일\n");
+            break;
+        case FRIDAY:
+            printf("금요일\n");
+            break;
+        case SATURDAY:
+            printf("토요일\n");
+            break;
+        case SUNDAY:
+            printf("일요일\n");
+            break;
+        default:
+            printf("???\n");
+            break;
+    }
+
+    return 0;
+}
